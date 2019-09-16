@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokedex</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/fa4e67e080.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+</head>
+<body>
+  <script src="js/funcion.js"></script>
+<div class="container">
+  <div class="searchBar">
+    <form action="">
+      <label for="pokemon">PokeSearch:</label>
+      <input type="text" name="pokemon" id="search" placeholder="Ex: Charizard or 6">
+    </form>
+  </div>
+
+  <div id="pokeOutput">
+    <div class="top-container">
+      <div class="image-container">
+        <button type="button" name="left" id="leftBtn" class="changeBtn"><i class="fa fa-caret-square-o-left" aria-hidden="true"></i></button><button type="button" name="default" id="defaultBtn" class="bigBtn">Default</button><button type="button" name="Shiny"
+          id="shinyBtn" class="bigBtn">Shiny</button><button type="button" name="left" id="rightBtn" class="changeBtn"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i></button>
+
+        <div class="poke-name-num">
+          <span class="name poke-info"></span>
+          <span class="idNum poke-info"></span>
+        </div>
+
+        <div class="size">
+          <span class="poke-info"><span class="weight"></span></span>
+          <span class="poke-info"><span class="height"></span></span>
+        </div>
+
+        <img src="" alt="" id="pokeImage">
+        <div id="types"></div>
+      </div>
+    </div>
+
+    <div class="bottom-container">
+
+      <table>
+        <tr>
+          <th>Base</th>
+          <th>Stats</th>
+        </tr>
+        <tr>
+          <td>HP:</td>
+          <td class="hp"></td>
+        </tr>
+        <tr>
+          <td>Attack:</td>
+          <td class="attack"></td>
+        </tr>
+        <tr>
+          <td>Defense:</td>
+          <td class="defense"></td>
+        </tr>
+        <tr>
+          <td>Sp.Attack:</td>
+          <td class="special-attack"></td>
+        </tr>
+        <tr>
+          <td>Sp.Defense:</td>
+          <td class="special-defense"></td>
+        </tr>
+        <tr>
+          <td>Speed:</td>
+          <td class="speed"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Api utilizada: <a href="https://pokeapi.co/">PokeAPI</a></p>
+</footer>
+</body>
+</html>
